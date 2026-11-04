@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dyorman Martins | Portfólio</title>
+  <meta name="description"
+    content="Portfólio de Dyorman Martins, estudante de desenvolvimento web. Ideias de interfaces e estudos em HTML, CSS e JavaScript.">
+
+  <!-- Fontes externas do Google Fonts: Space Grotesk é usada nos títulos e Inter nos textos corridos.
+       O preconnect agiliza a conexão antes de baixar os arquivos de fonte. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Biblioteca de ícones Font Awesome, carregada via CDN (link externo).
+       Os ícones são inseridos no HTML com a tag <i> e classes como fa-solid fa-moon. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Folha de estilo principal do projeto -->
+  <!-- Favicon: ícone que aparece na aba do navegador. Usa o mesmo monograma DM Gótico do cabeçalho. -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/04_DM_Gotico.png">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO FIXO: fica preso ao topo mesmo ao rolar a página.
+       Contém o monograma (marca pessoal), o menu de navegação e os botões de tema e menu hambúrguer. -->
+  <header class="cabecalho">
+    <div class="container container-cabecalho">
+      <a href="#inicio" class="link-monograma" aria-label="Ir para o início">
+        <img src="img/04_DM_Gotico.png" alt="Monograma DM em estilo gótico" class="monograma">
+      </a>
+
+      <nav id="navegacao-principal" class="navegacao" aria-label="Navegação principal">
+        <ul class="menu-navegacao">
+          <li><a href="#inicio" class="link-menu">Início</a></li>
+          <li><a href="#sobre" class="link-menu">Sobre mim</a></li>
+          <li><a href="#habilidades" class="link-menu">Habilidades</a></li>
+          <li><a href="#projetos" class="link-menu">Projetos</a></li>
+          <li><a href="#contato" class="link-menu">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- CONTROLES DO CABEÇALHO:
+           botao-tema alterna entre modo escuro e claro;
+           botao-menu abre/fecha o menu de navegação em telas pequenas (menu hambúrguer).
+           O aria-expanded informa ao leitor de tela se o menu está aberto ou fechado. -->
+      <div class="acoes-cabecalho">
+        <button id="botao-tema" class="botao-tema" aria-label="Alternar modo de cor">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="botao-menu" class="botao-menu" type="button" aria-label="Abrir menu de navegação"
+          aria-controls="navegacao-principal" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL: agrupa todas as cinco seções da página.
+       A navegação por âncoras (href="#id") leva direto a cada seção. -->
+  <main>
+    <!-- SEÇÃO 1 — INÍCIO: primeiro bloco visível ao abrir o site.
+         Contém o único h1 da página, a frase principal e o botão de chamada para ação. -->
+    <section id="inicio" class="secao secao-inicio">
+      <div class="container">
+        <div class="conteudo-inicio">
+          <h1 class="titulo-inicio">Olá, eu sou <span class="texto-destaque">Dyorman</span></h1>
+          <p class="frase-principal">Explorando o mundo do desenvolvimento web, unindo
+            criatividade, tecnologia e design.</p>
+          <a href="#projetos" class="botao-primario">
+            Ver projetos <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2 — SOBRE MIM: apresentação pessoal com avatar e três parágrafos.
+         O avatar fica à esquerda e os textos à direita no computador; empilhados no celular. -->
+    <section id="sobre" class="secao secao-sobre">
+      <div class="container">
+        <h2 class="titulo-secao">Um pouco sobre mim</h2>
+        <div class="conteudo-sobre">
+          <div class="avatar-sobre">
+            <img src="img/06_Avatar_Cartoon_Circular.png" alt="Avatar circular ilustrado de Dyorman Martins"
+              class="imagem-avatar">
+          </div>
+          <div class="texto-sobre">
+            <p>Estou aprendendo desenvolvimento web e tenho interesse em criar sites
+              bonitos, organizados e fáceis de usar.</p>
+            <p>Gosto de explorar ideias de design e conhecer melhor as tecnologias usadas
+              na construção de páginas.</p>
+            <p>Quero continuar aprendendo e transformar minhas ideias em páginas cada vez
+              mais criativas e funcionais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3 — HABILIDADES: tecnologias em aprendizagem (HTML, CSS e JavaScript)
+         exibidas em cards com ícone e etiqueta "Em aprendizado", mais caixa de áreas de interesse. -->
+    <section id="habilidades" class="secao secao-habilidades">
+      <div class="container">
+        <h2 class="titulo-secao">O que estou aprendendo</h2>
+        <p class="subtitulo-secao">Tecnologias que estou estudando e praticando no
+          momento, unindo código e design.</p>
+
+        <div class="grade-habilidades">
+          <div class="cartao-habilidade">
+            <i class="fa-brands fa-html5 icone-habilidade"></i>
+            <h3 class="nome-habilidade">HTML5</h3>
+            <span class="status-habilidade">Em aprendizado</span>
+            <p class="descricao-habilidade">Estruturação semântica e organização do
+              conteúdo das páginas.</p>
+          </div>
+
+          <div class="cartao-habilidade">
+            <i class="fa-brands fa-css3-alt icone-habilidade"></i>
+            <h3 class="nome-habilidade">CSS3</h3>
+            <span class="status-habilidade">Em aprendizado</span>
+            <p class="descricao-habilidade">Estilização visual, layouts responsivos e design
+              systems com variáveis.</p>
+          </div>
+
+          <div class="cartao-habilidade">
+            <i class="fa-brands fa-js icone-habilidade"></i>
+            <h3 class="nome-habilidade">JavaScript</h3>
+            <span class="status-habilidade">Em aprendizado</span>
+            <p class="descricao-habilidade">Fundamentos de lógica, manipulação do DOM e
+              interações na interface.</p>
+          </div>
+        </div>
+
+        <div class="caixa-interesses">
+          <h3 class="titulo-interesses">Áreas de interesse e exploração</h3>
+          <ul class="lista-interesses">
+            <li class="item-interesse"><i class="fa-solid fa-palette"></i> <span>Identidade visual</span></li>
+            <li class="item-interesse"><i class="fa-solid fa-layer-group"></i> <span>Organização do conteúdo</span></li>
+            <li class="item-interesse"><i class="fa-solid fa-pen-ruler"></i> <span>Design
+                de interfaces</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4 — PROJETOS CONCEITUAIS: os três cards são montados pelo JavaScript (script.js)
+         a partir de um array de objetos. Os cards abaixo existem como reserva estática:
+         se o JavaScript falhar ou estiver desativado, eles continuam visíveis no HTML.
+         Quando o JS roda com sucesso, ele substitui o conteúdo do #lista-projetos por innerHTML. -->
+    <section id="projetos" class="secao secao-projetos">
+      <div class="container">
+        <h2 class="titulo-secao">Conceitos de projetos</h2>
+        <p class="subtitulo-secao">Ideias de interfaces que representam os tipos de projetos
+          que gostaria de desenvolver futuramente, conforme avanço nos meus estudos. São propostas visuais ainda não
+          desenvolvidas, e as tecnologias indicadas são previstas.</p>
+
+        <!-- O JavaScript monta os projetos com array, objetos e for...of e grava o resultado aqui via innerHTML.
+             Os cards abaixo servem de reserva caso o JavaScript não seja executado. -->
+        <div class="grade-projetos" id="lista-projetos">
+          <!-- CARD DE RESERVA 1 — Café Rubro: exibido apenas se o JavaScript não rodar. -->
+          <article class="cartao-projeto">
+            <div class="moldura-imagem-projeto">
+              <img src="img/01_Cafe_Rubro.png" alt="Capa conceitual do projeto Café Rubro" class="imagem-projeto">
+            </div>
+            <div class="info-projeto">
+              <h3 class="nome-projeto">Café Rubro</h3>
+              <p class="descricao-projeto">Proposta de site para uma cafeteria, com
+                apresentação da marca, cardápio resumido, horários e contato.</p>
+              <div class="tecnologias-projeto">
+                <span class="tag-tecnologia">HTML</span>
+                <span class="tag-tecnologia">CSS</span>
+                <span class="tag-tecnologia">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD DE RESERVA 2 — Nox Studio: exibido apenas se o JavaScript não rodar. -->
+          <article class="cartao-projeto">
+            <div class="moldura-imagem-projeto">
+              <img src="img/02_Nox_Studio.png" alt="Capa conceitual do projeto Nox Studio" class="imagem-projeto">
+            </div>
+            <div class="info-projeto">
+              <h3 class="nome-projeto">Nox Studio</h3>
+              <p class="descricao-projeto">Proposta de portfólio para um estúdio criativo, com
+                apresentação de serviços e galeria de trabalhos.</p>
+              <div class="tecnologias-projeto">
+                <span class="tag-tecnologia">HTML</span>
+                <span class="tag-tecnologia">CSS</span>
+                <span class="tag-tecnologia">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD DE RESERVA 3 — TaskFlow: exibido apenas se o JavaScript não rodar. -->
+          <article class="cartao-projeto">
+            <div class="moldura-imagem-projeto">
+              <img src="img/03_TaskFlow.png" alt="Capa conceitual do projeto TaskFlow" class="imagem-projeto">
+            </div>
+            <div class="info-projeto">
+              <h3 class="nome-projeto">TaskFlow</h3>
+              <p class="descricao-projeto">Ideia de organizador de tarefas com funções
+                planejadas de adicionar, concluir e filtrar atividades.</p>
+              <div class="tecnologias-projeto">
+                <span class="tag-tecnologia">HTML</span>
+                <span class="tag-tecnologia">CSS</span>
+                <span class="tag-tecnologia">JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5 — CONTATO: no computador, informações à esquerda e formulário à direita.
+         No celular, os dois blocos ficam empilhados (um abaixo do outro). -->
+    <section id="contato" class="secao secao-contato">
+      <div class="container">
+        <div class="conteudo-contato">
+          <!-- BLOCO DE INFORMAÇÕES: título da seção, texto de apresentação e link de e-mail. -->
+          <div class="informacoes-contato">
+            <h2 class="titulo-secao">Vamos conversar?</h2>
+            <p class="texto-contato">
+              Tem alguma ideia ou projeto em mente? Entre em contato comigo. Estou sempre aberto a novas oportunidades e
+              a aprender coisas novas.
+            </p>
+            <div class="canais-contato">
+              <a href="mailto:dyorman_martins@hotmail.com" class="link-contato">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>dyorman_martins@hotmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- FORMULÁRIO: novalidate desativa a validação padrão do navegador para que o JavaScript
+               faça a validação manualmente. Os quatro campos (Nome, E-mail, Assunto e Mensagem)
+               são validados em script.js antes de registrar os dados no console. -->
+          <form class="formulario-contato" id="form-contato" novalidate>
+            <h3 class="titulo-formulario">Formulário de contato</h3>
+            <p class="descricao-formulario">Preencha os campos abaixo.</p>
+
+            <div class="campo-formulario">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="campo-formulario">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+            </div>
+            <div class="campo-formulario">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Escolha um assunto</option>
+                <option value="projeto">Quero conversar sobre uma ideia de site</option>
+                <option value="duvida">Tenho uma dúvida</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+            <div class="campo-formulario">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-enviar">Enviar mensagem</button>
+            <p class="aviso-formulario" id="aviso" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ: texto de direitos autorais e link de âncora para voltar ao topo da página. -->
+  <footer class="rodape">
+    <div class="container container-rodape">
+      <p class="texto-rodape">Dyorman Martins &copy; 2026. Todos os direitos reservados.</p>
+      <a href="#inicio" class="link-topo" aria-label="Voltar ao topo"><span>Voltar ao topo</span> <i
+          class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- Script principal: colocado no final da página, depois do conteúdo HTML. -->
+  <script src="script.js"></script>
+</body>
+
+</html>
