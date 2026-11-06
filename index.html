@@ -33,10 +33,12 @@
   <header class="cabecalho">
     <div class="container container-cabecalho">
       <a href="#inicio" class="link-monograma" aria-label="Ir para o início">
-        <img src="img/04_DM_Gotico.png" alt="Monograma DM em estilo gótico" class="monograma">
+        <img src="img/04_DM_Gotico.png" alt="Monograma DM em estilo gótico"
+          class="monograma">
       </a>
 
-      <nav id="navegacao-principal" class="navegacao" aria-label="Navegação principal">
+      <nav id="navegacao-principal" class="navegacao"
+        aria-label="Navegação principal">
         <ul class="menu-navegacao">
           <li><a href="#inicio" class="link-menu">Início</a></li>
           <li><a href="#sobre" class="link-menu">Sobre mim</a></li>
@@ -51,7 +53,8 @@
            botao-menu abre/fecha o menu de navegação em telas pequenas (menu hambúrguer).
            O aria-expanded informa ao leitor de tela se o menu está aberto ou fechado. -->
       <div class="acoes-cabecalho">
-        <button id="botao-tema" class="botao-tema" aria-label="Alternar modo de cor">
+        <button id="botao-tema" class="botao-tema"
+          aria-label="Alternar modo de cor">
           <i class="fa-solid fa-moon"></i>
         </button>
         <button id="botao-menu" class="botao-menu" type="button" aria-label="Abrir menu de navegação"
@@ -87,8 +90,8 @@
         <h2 class="titulo-secao">Um pouco sobre mim</h2>
         <div class="conteudo-sobre">
           <div class="avatar-sobre">
-            <img src="img/06_Avatar_Cartoon_Circular.png" alt="Avatar circular ilustrado de Dyorman Martins"
-              class="imagem-avatar">
+            <img src="img/06_Avatar_Cartoon_Circular.png"
+              alt="Avatar circular ilustrado de Dyorman Martins" class="imagem-avatar">
           </div>
           <div class="texto-sobre">
             <p>Estou aprendendo desenvolvimento web e tenho interesse em criar sites
@@ -139,8 +142,10 @@
         <div class="caixa-interesses">
           <h3 class="titulo-interesses">Áreas de interesse e exploração</h3>
           <ul class="lista-interesses">
-            <li class="item-interesse"><i class="fa-solid fa-palette"></i> <span>Identidade visual</span></li>
-            <li class="item-interesse"><i class="fa-solid fa-layer-group"></i> <span>Organização do conteúdo</span></li>
+            <li class="item-interesse"><i class="fa-solid fa-palette"></i> <span
+               >Identidade visual</span></li>
+            <li class="item-interesse"><i class="fa-solid fa-layer-group"></i> <span
+               >Organização do conteúdo</span></li>
             <li class="item-interesse"><i class="fa-solid fa-pen-ruler"></i> <span>Design
                 de interfaces</span></li>
           </ul>
@@ -165,7 +170,8 @@
           <!-- CARD DE RESERVA 1 — Café Rubro: exibido apenas se o JavaScript não rodar. -->
           <article class="cartao-projeto">
             <div class="moldura-imagem-projeto">
-              <img src="img/01_Cafe_Rubro.png" alt="Capa conceitual do projeto Café Rubro" class="imagem-projeto">
+              <img src="img/01_Cafe_Rubro.png" alt="Capa conceitual do projeto Café Rubro"
+                class="imagem-projeto">
             </div>
             <div class="info-projeto">
               <h3 class="nome-projeto">Café Rubro</h3>
@@ -182,7 +188,8 @@
           <!-- CARD DE RESERVA 2 — Nox Studio: exibido apenas se o JavaScript não rodar. -->
           <article class="cartao-projeto">
             <div class="moldura-imagem-projeto">
-              <img src="img/02_Nox_Studio.png" alt="Capa conceitual do projeto Nox Studio" class="imagem-projeto">
+              <img src="img/02_Nox_Studio.png" alt="Capa conceitual do projeto Nox Studio"
+                class="imagem-projeto">
             </div>
             <div class="info-projeto">
               <h3 class="nome-projeto">Nox Studio</h3>
@@ -199,7 +206,8 @@
           <!-- CARD DE RESERVA 3 — TaskFlow: exibido apenas se o JavaScript não rodar. -->
           <article class="cartao-projeto">
             <div class="moldura-imagem-projeto">
-              <img src="img/03_TaskFlow.png" alt="Capa conceitual do projeto TaskFlow" class="imagem-projeto">
+              <img src="img/03_TaskFlow.png" alt="Capa conceitual do projeto TaskFlow"
+                class="imagem-projeto">
             </div>
             <div class="info-projeto">
               <h3 class="nome-projeto">TaskFlow</h3>
@@ -225,8 +233,7 @@
           <div class="informacoes-contato">
             <h2 class="titulo-secao">Vamos conversar?</h2>
             <p class="texto-contato">
-              Tem alguma ideia ou projeto em mente? Entre em contato comigo. Estou sempre aberto a novas oportunidades e
-              a aprender coisas novas.
+              Tem alguma ideia ou projeto em mente? Entre em contato comigo. Estou sempre aberto a novas oportunidades e a aprender coisas novas.
             </p>
             <div class="canais-contato">
               <a href="mailto:dyorman_martins@hotmail.com" class="link-contato">
@@ -277,12 +284,12 @@
   <footer class="rodape">
     <div class="container container-rodape">
       <p class="texto-rodape">Dyorman Martins &copy; 2026. Todos os direitos reservados.</p>
-      <a href="#inicio" class="link-topo" aria-label="Voltar ao topo"><span>Voltar ao topo</span> <i
-          class="fa-solid fa-arrow-up"></i></a>
+      <a href="#inicio" class="link-topo" aria-label="Voltar ao topo"><span
+         >Voltar ao topo</span> <i class="fa-solid fa-arrow-up"></i></a>
     </div>
   </footer>
 
-  <!-- Script principal: colocado no final da página, depois do conteúdo HTML. -->
+  <!-- Script principal: colocado antes do </body> para que o HTML já esteja carregado quando o JS rodar. -->
   <script src="script.js"></script>
 </body>
 

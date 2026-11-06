@@ -426,6 +426,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Exibe mensagem de confirmação amigável e personalizada com estilo verde de sucesso
       mostrarAviso(`Mensagem Enviada! Obrigado ${nome}.`, 'certo');
+
+      //Limpa os campos do formulário depois que todas as validações passam.
+      formulario.reset();
     }
   }
 
